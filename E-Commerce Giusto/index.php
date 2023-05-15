@@ -158,6 +158,24 @@ session_start();
 								<div class="section-title">
 									<h3 class="title">Prodotti</h3>
 								</div>
+
+								<?php
+								if (isset($_SESSION["admin"])){
+									echo "
+									<!-- Aggiungi prodotto al db -->
+									<div class='col-md-9'>
+										<a   href='AggiungiProdottoAlDB.php'>
+											<button class ='primary-btn2' >
+											<i ></i>
+											<span>Aggiungi nuovo articolo</span>
+											</button>
+										</a>
+											
+									</div>
+									<!-- /Aggiungi prodotto al db -->";
+									
+								}
+								?>
 							</div>
 							<!-- /section title -->
 
